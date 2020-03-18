@@ -1,4 +1,10 @@
 
+.language-select {
+    /*text-align: center;*/
+    max-width: 90px;
+    /*float: left;*/
+}
+
 .layer1-back {
     background-image: url("../images/shan.png");
     background-size: cover;
