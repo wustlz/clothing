@@ -51,17 +51,18 @@
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle navigation</span> <span class="data-i18n-menu">Menu</span> <i
+                        class="fa fa-bars"></i>
                 </button>
                 <a style="display: none" class="navbar-brand page-scroll" href="#page-top"><img
-                        src="images/logos/logo.png" alt=""></a>
+                        src="images/logos/logo.png" alt="Chinese Clothing"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav text-center">
                     <li class="logo-holder">
-                        <a href="index.html"><img src="images/logos/logo.png" alt=""></a>
+                        <a href="index.html"><img src="images/logos/logo.png" alt="Chinese Clothing"></a>
                     </li>
                     <li><a href="index.html" class="data-i18n-menu-home">Home</a></li>
                     <!--                    <li><a href="#">Services</a></li>-->
@@ -79,7 +80,8 @@
         <div class="container">
             <div id="main-banner" class="main-banner">
                 <div class="intro-text">
-                    <div class="intro-heading" style="background-image: url(images/line.png); background-repeat:no-repeat;">
+                    <div class="intro-heading"
+                         style="background-image: url(images/line.png); background-repeat:no-repeat;">
                         <h1 style="background-image: url(images/leaf.png); background-repeat:no-repeat; background-position: top right;">
                             <span>Welcome to</span>
                             Chinese Clothing
@@ -153,6 +155,9 @@
         <div class="col-md-12 text-center">
             <ul class="cat-list">
                 <li>
+                    <button class="filter data-i18n-text-1" data-filter="all">All</button>
+                </li>
+                <li>
                     <button class="filter data-i18n-text-1" data-filter=".category-1">Qin & Han</button>
                 </li>
                 <li>
@@ -173,6 +178,9 @@
                 <li>
                     <button class="filter data-i18n-text-7" data-filter=".category-7">Qing</button>
                 </li>
+                <li>
+                    <button class="filter data-i18n-text-8" data-filter=".category-8">Min Guo</button>
+                </li>
             </ul>
         </div>
         <div class="animated bounceInUp slowest">
@@ -181,7 +189,7 @@
                     <div class="blog-box">
                         <div class="row">
                             <div class="col-xs-4 col-md-4">
-                                <img style="width: 100%" src="images/dynasty/QinHan.png" alt="">
+                                <img style="width: 100%" src="images/dynasty/QinHan.png" alt="Chinese Culture, Chinese Clothing">
                             </div>
                             <div class="col-xs-8 col-md-8 detail-content">
                                 <h3 class="data-i18n-group-key-8">Qin and Han Dynasties</h3>
@@ -213,7 +221,7 @@
                                 </p>
                             </div>
                             <div class="col-xs-4 col-md-4">
-                                <img style="width: 100%" src="images/dynasty/WeiJin.png" alt="">
+                                <img style="width: 100%" src="images/dynasty/WeiJin.png" alt="Chinese Culture, Chinese Clothing">
                             </div>
                         </div>
                     </div>
@@ -222,7 +230,7 @@
                     <div class="blog-box">
                         <div class="row">
                             <div class="col-xs-4 col-md-4">
-                                <img style="width: 100%" src="images/dynasty/SuiTang.png" alt="">
+                                <img style="width: 100%" src="images/dynasty/SuiTang.png" alt="Chinese Culture, Chinese Clothing">
                             </div>
                             <div class="col-xs-8 col-md-8 detail-content">
                                 <h3 class="data-i18n-group-key-3">Sui and Tang Dynasties</h3>
@@ -320,8 +328,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-9 dynasty-detail portfolio-item mix category-8" data-value="8">
+                    <div class="blog-box">
+                        <div class="row">
+                            <div class="col-xs-8 col-md-8 detail-content">
+                                <h3 class="data-i18n-group-key-9">The period of the Republic of China in Chinese
+                                    Mainland</h3>
+                                <p class="data-i18n-group-value-9-1">From early 1900s till now, cheongsam (qipao) has
+                                    become into fashion. It had a looser cut than the cheongsam of today, with long,
+                                    wide sleeves. Through the 1930s and 1940s, the dress became more fitted and
+                                    body-hugging, with some daring designs featuring side slits that reached up to the
+                                    thigh. It became customary to pair the dress with high heels. Women experimented
+                                    with different fastenings, pipings, and collars, as well as short-capped sleeves,
+                                    long sleeves with fur-lined cuffs, and sleeveless cheongsams.</p>
+                            </div>
+                            <div class="col-xs-4 col-md-4">
+                                <img style="width: 100%" src="images/dynasty/minguo.png"
+                                     alt="traditional chinese clothing, chinese dress">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+        </div>
+        <div class="col-md-12 text-center pic_source">
+            (<span class="data-i18n-pic-reference">Picture Reference</span>
+            : “微生活: 中国女装变迁图.” Sohu, 14 Sept. 2015, www.sohu.com/a/31829281_190953.)
         </div>
     </div>
 </section>
@@ -461,6 +494,7 @@
 
 <script src="js/main.js"></script>
 <script src="js/script.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>

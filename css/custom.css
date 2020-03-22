@@ -60,3 +60,7 @@
 .detail-content > p {
     text-align: left;
 }
+
+.pic_source {
+    color: gray;
+}
