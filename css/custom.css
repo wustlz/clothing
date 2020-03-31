@@ -1,0 +1,66 @@
+
+.language-select {
+    /*text-align: center;*/
+    max-width: 90px;
+    /*float: left;*/
+}
+
+.layer1-back {
+    background-image: url("../images/shan.png");
+    background-size: cover;
+}
+
+.clothing_video {
+    width: 98%;
+    height: 98%;
+    object-fit: fill;
+    /*margin-left: 8.33%;*/
+    /*margin-right: 8.33%;*/
+    margin-top: 11%;
+}
+
+.blog-box {
+    text-align: left;
+    margin-bottom: 30px;
+    float: left;
+    background-color: #f0e5de !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .blog-box {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .blog-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .dynasty-detail {
+        margin: 0 12.5% !important;
+    }
+
+    .detail-content {
+        display: inline-block;
+        padding-top: 30px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.detail-content > h3 {
+    /*margin-top: 30px;*/
+    /*padding-top: 15px;*/
+    line-height: 25px;
+}
+
+.detail-content > p {
+    text-align: left;
+}
+
+.pic_source {
+    color: gray;
+}
