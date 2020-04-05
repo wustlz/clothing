@@ -1,4 +1,3 @@
-
 .language-select {
     /*text-align: center;*/
     max-width: 90px;
@@ -16,7 +15,7 @@
     object-fit: fill;
     /*margin-left: 8.33%;*/
     /*margin-right: 8.33%;*/
-    margin-top: 11%;
+    margin-top: 10%;
 }
 
 .blog-box {
@@ -52,8 +51,6 @@
 }
 
 .detail-content > h3 {
-    /*margin-top: 30px;*/
-    /*padding-top: 15px;*/
     line-height: 25px;
 }
 
@@ -61,6 +58,31 @@
     text-align: left;
 }
 
+.blog-box > .row {
+}
+
 .pic_source {
     color: gray;
+}
+
+.detail-name {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 620px) {
+    .detail-name {
+        margin-left: 18px;
+        padding-top: 10px;
+    }
+}
+
+.name-pinyin {
+    text-align: center;
+    font-size: 28px;
+}
+
+.name-chinese {
+    text-align: center;
+    font-size: 56px;
 }
