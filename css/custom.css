@@ -86,3 +86,38 @@
     text-align: center;
     font-size: 56px;
 }
+
+.name-form-text {
+    padding: 10px 10px 10px;
+    text-align: right;
+}
+
+@media only screen and (min-width: 590px) {
+    .name-form-text {
+        font-size: 18px;
+    }
+}
+
+.name-form-input {
+    margin-left: -10px;
+}
+
+.name-gender-radio {
+    display: inline;
+}
+
+.name-gender-radio > label {
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#name-birthday > input {
+    font-size: 18px !important;
+}
+
+.name-circle-text {
+    float: none;
+    font-size: 48px;
+    vertical-align: middle;
+}
