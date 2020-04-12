@@ -121,3 +121,19 @@
     font-size: 48px;
     vertical-align: middle;
 }
+
+.zodiac-box {
+    /*padding-left: 0px !important;*/
+}
+
+.zodiac-img {
+    padding: 0px !important;
+}
+
+.zodiac-text {
+    text-align: left;
+}
+
+.solar-text {
+    text-align: center;
+}
