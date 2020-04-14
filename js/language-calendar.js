@@ -1,12 +1,11 @@
 
 var lan = "en";
-var datetimepicker_lan = 'en';
 
-$(function () {
+$.ready(function () {
+    // alert("页面加载时调用的方法");
     lan = $.i18n.normaliseLanguageCode({}); //获取浏览器的语言
     if (lan !== 'zh') {
         lan = 'en';
-        datetimepicker_lan='en';
     }
     loadProperties(lan);
 });
@@ -15,21 +14,15 @@ function changeLanguage() {
     lan_text = $('.data-i18n-lan').text();
     if (lan_text === '切换中文') {
         lan = 'zh';
-        datetimepicker_lan='zh-cn';
     } else {
         lan = 'en';
-        datetimepicker_lan='en';
     }
-    loadProperties(lan, datetimepicker_lan);
+    loadProperties(lan);
 }
 
-function loadProperties(type, date_lan) {
-    $('#name-birthday').datetimepicker({
-        format: 'YYYY-MM-DD',
-        locale: moment.locale(date_lan)
-    });
+function loadProperties(type) {
     $.i18n.properties({
-        name: 'name', // 资源文件名称
+        name: 'calendar', // 资源文件名称
         language: type, // 对应的语言
         path: '/clothing/i18n/resource/', // 资源文件所在目录路径
         mode: 'map', // 模式：变量或 Map
@@ -41,5 +34,4 @@ function loadProperties(type, date_lan) {
             });
         }
     });
-    reCss();
 }

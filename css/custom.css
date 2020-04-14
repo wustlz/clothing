@@ -13,8 +13,6 @@
     width: 98%;
     height: 98%;
     object-fit: fill;
-    /*margin-left: 8.33%;*/
-    /*margin-right: 8.33%;*/
     margin-top: 10%;
 }
 
@@ -22,6 +20,7 @@
     text-align: left;
     margin-bottom: 30px;
     float: left;
+    width: 100%;
     background-color: #f0e5de !important;
 }
 
@@ -116,6 +115,12 @@
     font-size: 18px !important;
 }
 
+.name-content > p {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
 .name-circle-text {
     float: none;
     font-size: 48px;
@@ -123,7 +128,12 @@
 }
 
 .zodiac-box {
-    /*padding-left: 0px !important;*/
+    /*height: 250px;*/
+    text-align: center;
+}
+
+.zodiac-box > p > span {
+    font-weight: bolder;
 }
 
 .zodiac-img {
@@ -136,4 +146,134 @@
 
 .solar-text {
     text-align: center;
+}
+
+.calendar-back {
+    background-color: #5caeff;
+}
+
+.calendar-year {
+    border-bottom-color: #d8d8d8;
+    border-right-color: #d8d8d8;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.calendar-week {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.calendar-table {
+    border-collapse: collapse;
+}
+
+.calendar-table > tbody > tr > td,
+.calendar-table > thead > tr > th {
+    border-top: 1px solid #c8cacc;
+    padding: 0;
+}
+
+.calendar-table > tbody > tr > td > a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.calendar-table > tbody > tr > td > a > span {
+    color: #999999;
+    font-size: 12px;
+}
+
+.calendar-table > tbody > tr > td > a * {
+    cursor: pointer;
+}
+
+.calendar-table > tbody > tr > td > a > p {
+    line-height: 1;
+}
+
+.calendar-table > tbody > tr > td > a:hover {
+    padding: 2px;
+    border: 3px solid #fb0;
+}
+
+.not-month, .not-month > p, .not-month > span {
+    color: #999999;
+}
+
+.calendar-table > thead > tr > th {
+    padding: 10px;
+    font-weight: normal;
+    font-size: 13px;
+    text-align: center;
+    border-top: 1px solid #5af !important;
+}
+
+@media only screen and (min-width: 800px) {
+    .calendar-table > thead > tr > th {
+        font-size: 16px;
+    }
+}
+
+.calendar-day {
+    max-height: 415px;
+    text-align: center;
+    font-family: arial;
+}
+
+.calendar-p-1 {
+    margin-top: 12px;
+    color: #ffffff;
+}
+
+.calendar-p-2 {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 0;
+    color: #ffffff;
+    line-height: 76px;
+    font-size: 52px;
+    background: #fb0;
+    border-radius: 3px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1), -1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-p-3 {
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.calendar-p-3 > span {
+    display: block;
+    font-size: 14px;
+}
+
+.calendar-yj {
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #94c9ff;
+    padding-top: 10px;
+    line-height: 18px;
+    color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+
+.calendar-yj > div > p {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.calendar-yj > div > span {
+    font-size: 14px;
 }

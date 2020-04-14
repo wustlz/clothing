@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/color1.css">
 
-    <script data-ad-client="ca-pub-5229177333810780" async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--    <script data-ad-client="ca-pub-5229177333810780" async-->
+    <!--            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 </head>
 <body id="page-top" class="index">
 
@@ -67,9 +67,9 @@
                     <li class="logo-holder">
                         <a href="index.html"><img src="images/logos/logo.png" alt="Chinese Clothing"></a>
                     </li>
-                    <li><a href="index.html" class="data-i18n-menu-home">Clothing</a></li>
-                    <li><a href="name.html">Names</a></li>
-                    <li><a href="calendar.html">> Calendar</a></li>
+                    <li><a href="index.html" class="data-i18n-menu-clothing">Clothing</a></li>
+                    <li><a href="name.html" class="data-i18n-menu-name">Names</a></li>
+                    <li><a href="calendar.html">> <span class="data-i18n-menu-calendar">Calendar</span></a></li>
                     <li><a href="javascript:void(0)" onclick="changeLanguage()" class="data-i18n-lan">切换中文</a></li>
                 </ul>
             </div>
@@ -98,51 +98,188 @@
 
 </header>
 
-<section class="why-holder">
-    <div class="why-choose-us">
+<section id="contact">
+    <div class="contact-pre text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12">
                     <h2 class="section-heading data-i18n-title-1">Chinese Calendar</h2>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid  bg-light-gray" style="max-width: 1440px">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="embed-responsive embed-responsive-16by9 clothing_video col-md-offset-1 col-lg-offset-4col-xl-offset-4">
-                    <iframe id="mframe" class="embed-responsive-item"
-                            src="https://player.bilibili.com/player.html?aid=98407897&bvid=BV1QE411F77F&cid=167989869&page=1"></iframe>
+    <div class="container">
+        <div class="row calendar-back">
+            <div class="col-md-8 col-sm-8 col-xs-8" style="background-color: #fff">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2">
+                        <div class="row">
+                            <div style="text-align: center">
+                                <div class="btn-group dropdown calendar-year">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        2020 <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">2019</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">2020</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">2021</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">2022</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">2023</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group dropdown">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        Jan <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Jan</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Feb</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Mar</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Apr</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">May</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Jun</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Jul</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Aug</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Sept</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Oct</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Nov</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="javascript:void(0)">Dec</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default data-i18n-text-button-now">Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row calendar-week">
+                    <div class="col-md-12">
+                        <table class="table calendar-table">
+                            <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tues</th>
+                                <th>Wed</th>
+                                <th>Thur</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="not-month"><p>30</p><span>初一</span></a></td>
+                                <td><a href="javascript:void(0)" class="not-month"><p>31</p><span>初二</span></a></td>
+                                <td><a href="javascript:void(0)"><p>1</p><span>清明</span></a></td>
+                                <td><a href="javascript:void(0)"><p>2</p><span>初四</span></a></td>
+                                <td><a href="javascript:void(0)"><p>3</p><span>端午</span></a></td>
+                                <td><a href="javascript:void(0)"><p>4</p><span>初六</span></a></td>
+                                <td><a href="javascript:void(0)"><p>5</p><span>初七</span></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)"><p>1</p><span>初一</span></a></td>
+                                <td><a href="javascript:void(0)"><p>2</p><span>初二</span></a></td>
+                                <td><a href="javascript:void(0)"><p>3</p><span>清明</span></a></td>
+                                <td><a href="javascript:void(0)"><p>4</p><span>初四</span></a></td>
+                                <td><a href="javascript:void(0)"><p>5</p><span>端午</span></a></td>
+                                <td><a href="javascript:void(0)"><p>6</p><span>初六</span></a></td>
+                                <td><a href="javascript:void(0)"><p>7</p><span>初七</span></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)"><p>1</p><span>初一</span></a></td>
+                                <td><a href="javascript:void(0)"><p>2</p><span>初二</span></a></td>
+                                <td><a href="javascript:void(0)"><p>3</p><span>清明</span></a></td>
+                                <td><a href="javascript:void(0)"><p>4</p><span>初四</span></a></td>
+                                <td><a href="javascript:void(0)"><p>5</p><span>端午</span></a></td>
+                                <td><a href="javascript:void(0)"><p>6</p><span>初六</span></a></td>
+                                <td><a href="javascript:void(0)"><p>7</p><span>初七</span></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)"><p>1</p><span>初一</span></a></td>
+                                <td><a href="javascript:void(0)"><p>2</p><span>初二</span></a></td>
+                                <td><a href="javascript:void(0)"><p>3</p><span>清明</span></a></td>
+                                <td><a href="javascript:void(0)"><p>4</p><span>初四</span></a></td>
+                                <td><a href="javascript:void(0)"><p>5</p><span>端午</span></a></td>
+                                <td><a href="javascript:void(0)"><p>6</p><span>初六</span></a></td>
+                                <td><a href="javascript:void(0)"><p>7</p><span>初七</span></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)"><p>1</p><span>初一</span></a></td>
+                                <td><a href="javascript:void(0)"><p>2</p><span>初二</span></a></td>
+                                <td><a href="javascript:void(0)"><p>3</p><span>清明</span></a></td>
+                                <td><a href="javascript:void(0)"><p>4</p><span>初四</span></a></td>
+                                <td><a href="javascript:void(0)"><p>5</p><span>端午</span></a></td>
+                                <td><a href="javascript:void(0)"><p>6</p><span>初六</span></a></td>
+                                <td><a href="javascript:void(0)"><p>7</p><span>初七</span></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)"><p>1</p><span>初一</span></a></td>
+                                <td><a href="javascript:void(0)"><p>2</p><span>初二</span></a></td>
+                                <td><a href="javascript:void(0)"><p>3</p><span>清明</span></a></td>
+                                <td><a href="javascript:void(0)"><p>4</p><span>初四</span></a></td>
+                                <td><a href="javascript:void(0)" class="not-month"><p>5</p><span>端午</span></a></td>
+                                <td><a href="javascript:void(0)" class="not-month"><p>6</p><span>初六</span></a></td>
+                                <td><a href="javascript:void(0)" class="not-month"><p>7</p><span>初七</span></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="why-right">
-                    <h4 class="section-sub-heading data-i18n-group-key-1">
-                        Wear traditional Chinese clothes, Promote our land of courtesy
-                    </h4>
-                    <div class="content-area">
-                        <p class="sub-text data-i18n-group-value-1-1">
-                            For thousands of years, generations of clothing designers have devoted themselves to
-                            building the Kingdom of Clothes, making the garments that cover the human body into an
-                            important component of Chinese culture.
-                        </p>
-                        <p class="data-i18n-group-value-1-2">
-                            However, it seems like China is the only country who almost abandon its traditional
-                            clothing. In Japan, it is very common to see women wearing kimonos and clogs. In Scotland,
-                            people would not be surprised by men in kilts. Sadly, in China, people wearing traditional
-                            Chinese clothing will be judged harshly.
-                        </p>
-                        <p class="data-i18n-group-value-1-3">
-                            Nonetheless, we still believe that traditional Chinese clothing will become popular and
-                            impress the whole world in the near future. Let’s begin with learning what and how ancient
-                            Chinese people wore.
+            <div class="col-md-4 col-sm-4 col-xs-4 calendar-day">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="calendar-p-1">2020-04-12</p>
+                        <p class="calendar-p-2">12</p>
+                        <p class="calendar-p-3">
+                            <span>三月二十</span>
+                            <span>庚子年 【鼠年】</span>
+                            <span>庚辰月 乙酉日</span>
                         </p>
                     </div>
-
+                </div>
+                <div class="row calendar-yj">
+                    <div class="col-md-4 col-xs-6 col-sm-6 col-md-offset-2">
+                        <p>宜</p>
+                        <span>祭祀</span><br/>
+                        <span>沐浴</span><br/>
+                        <span>破屋</span><br/>
+                        <span>坏垣</span><br/>
+                        <span>求医</span><br/>
+                        <span>治病</span><br/>
+                        <span>解除</span><br/>
+                        <span>余事勿取</span>
+                    </div>
+                    <div class="col-md-4 col-xs-6 col-sm-6">
+                        <p>忌</p>
+                        <span>嫁娶</span><br/>
+                        <span>开市</span><br/>
+                        <span>交易</span><br/>
+                        <span>入宅</span><br/>
+                        <span>安葬</span>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row"></div>
     </div>
 </section>
 
@@ -150,178 +287,77 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="section-heading">Chinese 12 Zodiac Animals</h2>
+                <h2 class="section-heading data-i18n-title-2">Chinese 12 Zodiac Animals</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/rat.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Rat </span>Quick-witted, resourceful, versatile, smart</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/rat.png" alt="rat">
+                <p class="data-i18n-text-rat"><span>Rat </span><br/>Resourceful<br/>Versatile<br/>Smart</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/ox.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Ox </span>Diligent, dependable, strong, determined</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/ox.png" alt="ox">
+                <p class="data-i18n-text-ox"><span>Ox </span><br/>Diligent<br/>Dependable<br/>Strong</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/tiger.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Tiger </span>Brave, confident, competitive</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/tiger.png" alt="tiger">
+                <p class="data-i18n-text-tiger"><span>Tiger </span><br/>Brave<br/>Confident<br/>Competitive</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/rabbit.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Rabbit </span>Quiet, elegant, kind, responsible</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/rabbit.png" alt="rabbit">
+                <p class="data-i18n-text-rabbit"><span>Rabbit </span><br/>Quiet<br/>Elegant<br/>Kind</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/dragon.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Dragon </span>Confident, intelligent, enthusiastic</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/dragon.png" alt="dragon">
+                <p class="data-i18n-text-dragon"><span>Dragon </span><br/>Confident<br/>Intelligent<br/>Enthusiastic</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/snake.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Snake </span>Agility, Enigmatic, intelligent, wise</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/snake.png" alt="snake">
+                <p class="data-i18n-text-snake"><span>Snake </span><br/>Agility<br/>Enigmatic<br/>Wise</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/horse.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Horse </span>Animated, active, energetic</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/horse.png" alt="horse">
+                <p class="data-i18n-text-horse"><span>Horse </span><br/>Animated<br/>Active<br/>Energetic</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/goat.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Goat </span>Calm, gentle, sympathetic</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/goat.png" alt="goat">
+                <p class="data-i18n-text-goat"><span>Goat </span><br/>Calm<br/>Gentle<br/>Sympathetic</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/monkey.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Monkey </span>Sharp, smart, curiosity</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/monkey.png" alt="monkey">
+                <p class="data-i18n-text-monkey"><span>Monkey </span><br/>Sharp<br/>Smart<br/>Curiosity</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/rooster.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Rooster </span>Observant, hardworking, courageous</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/rooster.png" alt="rooster">
+                <p class="data-i18n-text-rooster"><span>Rooster </span><br/>Observant<br/>Hardworking<br/>Courageous</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/dog.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Dog </span>Lovely, honest, prudent</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/dog.png" alt="dog">
+                <p class="data-i18n-text-dog"><span>Dog </span><br/>Lovely<br/>Honest<br/>Prudent</p>
             </div>
-            <div class="col-md-3 zodiac-box">
-                <div class="blog-box">
-                    <div class="row">
-                        <div class="col-xs-4 zodiac-img">
-                            <img src="images/zodiac/pig.png" alt="rat">
-                        </div>
-                        <div class="col-xs-8 zodiac-text">
-                            <p><span>Pig </span>Compassionate, generous, diligent</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-2 col-sm-2 col-xs-3 zodiac-box">
+                <img src="images/zodiac/pig.png" alt="pig">
+                <p class="data-i18n-text-pig"><span>Pig </span><br/>Compassionate<br/>Generous<br/>Diligent</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Team Section -->
 <section id="team" class="our-team">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">The Chinese 24 Solar Terms</h2>
+                <h2 class="section-heading data-i18n-title-3">The Chinese 24 Solar Terms</h2>
             </div>
         </div>
         <div class="row" style="margin-bottom: 20px;">
             <div class="detail-content">
-                <p>The ancient Chinese divided the sun’s annual circular motion into 24 segments, calling each segment a
-                    specific ‘Solar Term’. The criteria for its formulation were developed through the observation of
-                    changes of seasons, astronomy and other natural phenomena. The element remains of particular
-                    importance to farmers for guiding their practices. Some rituals and festivities are associated with
-                    the terms, which have contributed to the community’s cultural identity. Knowledge of the element is
-                    transmitted through formal and informal means of education.
+                <p class="data-i18n-text-solar">The ancient Chinese divided the sun’s annual circular motion into 24 
+                    segments, calling each segment a specific ‘Solar Term’. The criteria for its formulation were 
+                    developed through the observation of changes of seasons, astronomy and other natural phenomena. 
+                    The element remains of particular importance to farmers for guiding their practices. Some rituals 
+                    and festivities are associated with the terms, which have contributed to the community’s cultural 
+                    identity. Knowledge of the element is transmitted through formal and informal means of education.
                 </p>
             </div>
         </div>
@@ -330,12 +366,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Start of Spring</h4>
+                            <h4 class="data-i18n-text-key-1">Start of Spring</h4>
                         </div>
                     </div>
                     <img src="images/solar/01StartOfSpring.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The spring season begins.</p>
+                        <p class="data-i18n-text-text-1">The spring season begins.</p>
                     </div>
                 </div>
             </div>
@@ -343,12 +379,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Rain Water</h4>
+                            <h4 class="data-i18n-text-key-2">Rain Water</h4>
                         </div>
                     </div>
                     <img src="images/solar/02RainWater.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The amount of rainfall increases.</p>
+                        <p class="data-i18n-text-text-2">The amount of rainfall increases.</p>
                     </div>
                 </div>
             </div>
@@ -356,12 +392,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Insects Awaken</h4>
+                            <h4 class="data-i18n-text-key-3">Insects Awaken</h4>
                         </div>
                     </div>
                     <img src="images/solar/03InsectAwaken.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>Insects are awakening from winter sleep by the spring thunder.</p>
+                        <p class="data-i18n-text-text-3">Insects are awakening from winter sleep by the spring thunder.</p>
                     </div>
                 </div>
             </div>
@@ -369,12 +405,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Spring Equinox</h4>
+                            <h4 class="data-i18n-text-key-4">Spring Equinox</h4>
                         </div>
                     </div>
                     <img src="images/solar/04SpringEquinox.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The mid-point for the spring season; Day and night are equally long on the day.</p>
+                        <p class="data-i18n-text-text-4">The mid-point for the spring season; Day and night are equally long on the day.</p>
                     </div>
                 </div>
             </div>
@@ -384,12 +420,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Pure Brightness</h4>
+                            <h4 class="data-i18n-text-key-5">Pure Brightness</h4>
                         </div>
                     </div>
-                    <img src="images/solar/05PureBrightness.png" class="img-responsive lazyOwl" alt="">
+                    <img src="images/solar/05PureBrightness.png" class="img-responsive lazyOwl" alt="Pure Brightness">
                     <div class="solar-text">
-                        <p>It is warm, bright and everywhere gets green; It is also the time for tending graves.</p>
+                        <p class="data-i18n-text-text-5">It is warm, bright and everywhere gets green; It is also the time for tending graves.</p>
                     </div>
                 </div>
             </div>
@@ -397,12 +433,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Grain Rain</h4>
+                            <h4 class="data-i18n-text-key-6">Grain Rain</h4>
                         </div>
                     </div>
                     <img src="images/solar/06GrainRain.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>Rainfall increases which is helpful to grain crops.</p>
+                        <p class="data-i18n-text-text-6">Rainfall increases which is helpful to grain crops.</p>
                     </div>
                 </div>
             </div>
@@ -410,12 +446,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Start of Summer</h4>
+                            <h4 class="data-i18n-text-key-7">Start of Summer</h4>
                         </div>
                     </div>
                     <img src="images/solar/07StartOfSummer.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The summer season begins.</p>
+                        <p class="data-i18n-text-text-7">The summer season begins.</p>
                     </div>
                 </div>
             </div>
@@ -423,12 +459,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Grain Full</h4>
+                            <h4 class="data-i18n-text-key-8">Grain Full</h4>
                         </div>
                     </div>
                     <img src="images/solar/08GrainFull.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>Grains are getting plump but not ripe yet.</p>
+                        <p class="data-i18n-text-text-8">Grains are getting plump but not ripe yet.</p>
                     </div>
                 </div>
             </div>
@@ -438,12 +474,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Grain in Ear</h4>
+                            <h4 class="data-i18n-text-key-9">Grain in Ear</h4>
                         </div>
                     </div>
                     <img src="images/solar/09Grain in Ear.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>Wheat grows ripe marking the beginning of a busy farming season.</p>
+                        <p class="data-i18n-text-text-9">Wheat grows ripe marking the beginning of a busy farming season.</p>
                     </div>
                 </div>
             </div>
@@ -451,12 +487,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Summer Solstice</h4>
+                            <h4 class="data-i18n-text-key-10">Summer Solstice</h4>
                         </div>
                     </div>
                     <img src="images/solar/10Summer%20Solstice.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The sun altitude arrive the highest in north; It has the longest daytime of the year.</p>
+                        <p class="data-i18n-text-text-10">The sun altitude arrive the highest in north; It has the longest daytime of the year.</p>
                     </div>
                 </div>
             </div>
@@ -464,12 +500,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Slight Heat</h4>
+                            <h4 class="data-i18n-text-key-11">Slight Heat</h4>
                         </div>
                     </div>
                     <img src="images/solar/11Slight%20Heat.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The hottest days are yet to come.</p>
+                        <p class="data-i18n-text-text-11">The hottest days are yet to come.</p>
                     </div>
                 </div>
             </div>
@@ -477,12 +513,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Great heat</h4>
+                            <h4 class="data-i18n-text-key-12">Great heat</h4>
                         </div>
                     </div>
                     <img src="images/solar/12Great%20heat.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The hottest time of a year.</p>
+                        <p class="data-i18n-text-text-12">The hottest time of a year.</p>
                     </div>
                 </div>
             </div>
@@ -492,12 +528,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Start of Autumn</h4>
+                            <h4 class="data-i18n-text-key-13">Start of Autumn</h4>
                         </div>
                     </div>
                     <img src="images/solar/13Start%20of%20Autumn.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The autumn season begins.</p>
+                        <p class="data-i18n-text-text-13">The autumn season begins.</p>
                     </div>
                 </div>
             </div>
@@ -505,12 +541,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>The End of Heat</h4>
+                            <h4 class="data-i18n-text-key-14">The End of Heat</h4>
                         </div>
                     </div>
                     <img src="images/solar/14The%20End%20of%20Heat.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The hot summer is coming to an end and heat stops.</p>
+                        <p class="data-i18n-text-text-14">The hot summer is coming to an end and heat stops.</p>
                     </div>
                 </div>
             </div>
@@ -518,12 +554,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>White Dew</h4>
+                            <h4 class="data-i18n-text-key-15">White Dew</h4>
                         </div>
                     </div>
                     <img src="images/solar/15White%20Dew.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>It is getting cooler and dewdrops appear on grass and trees in the morning.</p>
+                        <p class="data-i18n-text-text-15">It is getting cooler and dewdrops appear on grass and trees in the morning.</p>
                     </div>
                 </div>
             </div>
@@ -531,12 +567,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Autumn Equinox</h4>
+                            <h4 class="data-i18n-text-key-16">Autumn Equinox</h4>
                         </div>
                     </div>
                     <img src="images/solar/16Autumn%20Equinox.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The mid-point for the autumn season and the temperature begins to decrease.</p>
+                        <p class="data-i18n-text-text-16">The mid-point for the autumn season and the temperature begins to decrease.</p>
                     </div>
                 </div>
             </div>
@@ -546,12 +582,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Cold Dew</h4>
+                            <h4 class="data-i18n-text-key-17">Cold Dew</h4>
                         </div>
                     </div>
                     <img src="images/solar/17Cold%20Dew.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The dews are becoming frost.</p>
+                        <p class="data-i18n-text-text-17">The dews are becoming frost.</p>
                     </div>
                 </div>
             </div>
@@ -559,12 +595,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Frost Descent</h4>
+                            <h4 class="data-i18n-text-key-18">Frost Descent</h4>
                         </div>
                     </div>
                     <img src="images/solar/18Frost%20Descent.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>Frost appears and the temperature begins to descent.</p>
+                        <p class="data-i18n-text-text-18">Frost appears and the temperature begins to descent.</p>
                     </div>
                 </div>
             </div>
@@ -572,12 +608,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Start of Winter</h4>
+                            <h4 class="data-i18n-text-key-19">Start of Winter</h4>
                         </div>
                     </div>
                     <img src="images/solar/19Start%20of%20Winter.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>The winter season begins.</p>
+                        <p class="data-i18n-text-text-19">The winter season begins.</p>
                     </div>
                 </div>
             </div>
@@ -585,12 +621,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Light Snow</h4>
+                            <h4 class="data-i18n-text-key-20">Light Snow</h4>
                         </div>
                     </div>
                     <img src="images/solar/20Light%20Snow.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>It begins to snow but can't accumulate a lot on the ground.</p>
+                        <p class="data-i18n-text-text-20">It begins to snow but can't accumulate a lot on the ground.</p>
                     </div>
                 </div>
             </div>
@@ -600,12 +636,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Heavy Snow</h4>
+                            <h4 class="data-i18n-text-key-21">Heavy Snow</h4>
                         </div>
                     </div>
                     <img src="images/solar/21Heavy%20Snow.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>It begins to snow heavily.</p>
+                        <p class="data-i18n-text-text-21">It begins to snow heavily.</p>
                     </div>
                 </div>
             </div>
@@ -613,12 +649,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Winter Solstice</h4>
+                            <h4 class="data-i18n-text-key-22">Winter Solstice</h4>
                         </div>
                     </div>
                     <img src="images/solar/22Winter%20Solstice.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>It has the shortest daytime of a year, People eat dumplings.</p>
+                        <p class="data-i18n-text-text-22">It has the shortest daytime of a year, People eat dumplings.</p>
                     </div>
                 </div>
             </div>
@@ -626,12 +662,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Lesser Cold</h4>
+                            <h4 class="data-i18n-text-key-23">Lesser Cold</h4>
                         </div>
                     </div>
                     <img src="images/solar/23Lesser%20Cold.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>It is getting colder, but the coldest days are yet to come.</p>
+                        <p class="data-i18n-text-text-23">It is getting colder, but the coldest days are yet to come.</p>
                     </div>
                 </div>
             </div>
@@ -639,12 +675,12 @@
                 <div class="team-member item">
                     <div class="team-hover">
                         <div class="team-hover-content">
-                            <h4>Greater Cold</h4>
+                            <h4 class="data-i18n-text-key-24">Greater Cold</h4>
                         </div>
                     </div>
                     <img src="images/solar/24Greater%20Cold.png" class="img-responsive lazyOwl" alt="">
                     <div class="solar-text">
-                        <p>It is the coldest time of a year.</p>
+                        <p class="data-i18n-text-text-24">It is the coldest time of a year.</p>
                     </div>
                 </div>
             </div>
@@ -653,47 +689,27 @@
 </section>
 
 <section class="bottom-section text-center">
-
     <div class="container">
-
         <div class="row">
-
             <div class="col-md-4">
-
                 <div class="circle footer-images"><img src="images/email.png" alt="email"></div>
                 <h4 class="data-i18n-text-email">EMAIL</h4>
-
                 <p>iamchineseculture@gmail.com</p>
-
             </div>
 
             <div class="col-md-4">
-
-                <div class="circle footer-images">
-                    <img src="images/address.png" alt="Address">
-                </div>
-
+                <div class="circle footer-images"><img src="images/address.png" alt="Address"></div>
                 <h4 class="data-i18n-text-address">ADDRESS</h4>
-
                 <p>on earth</p>
-
             </div>
 
             <div class="col-md-4">
-
                 <div class="circle footer-images"><img src="images/phone.png" alt="Phone"></div>
-
                 <h4 class="data-i18n-text-phone">Phone</h4>
-
                 <p>+1 (754)-216-8988</p>
-
             </div>
-
-
         </div>
-
     </div>
-
 </section>
 <footer id="footer">
     <div class="container">
@@ -736,11 +752,11 @@
 <script src="js/vendor/wow.min.js"></script>
 
 <script type="application/javascript" src="js/vendor/jquery.i18n.properties.js"></script>
-<script type="application/javascript" src="js/language-clothing.js"></script>
+<script type="application/javascript" src="js/language-calendar.js"></script>
 
 <script src="js/main.js"></script>
 <script src="js/script.js"></script>
-<script src="js/custom.js"></script>
+<script src="js/custom-name.js"></script>
 
 </body>
 </html>
