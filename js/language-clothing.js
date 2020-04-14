@@ -24,7 +24,7 @@ function loadProperties(type) {
     $.i18n.properties({
         name: 'clothing', // 资源文件名称
         language: type, // 对应的语言
-        path: '/clothing/i18n/resource/', // 资源文件所在目录路径
+        path: '/i18n/resource/', // 资源文件所在目录路径
         mode: 'map', // 模式：变量或 Map
         cache: false,
         encoding: 'UTF-8',
