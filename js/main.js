@@ -21,33 +21,6 @@ $(document).ready(function (e) {
 //++++++++++++++++++++++++++++++++
 //   All Sliders
 //++++++++++++++++++++++++++++++++
-    $("#owl-demo").owlCarousel({
-        items: 4,
-        lazyLoad: true,
-        navigation: true, itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [980, 3],
-        itemsTablet: [768, 2],
-        itemsTabletSmall: [800, 2],
-        itemsMobile: [479, 1]});
-    $("#owl-demo-2").owlCarousel({
-        items: 4,
-        lazyLoad: true,
-        navigation: true,
-        itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [980, 3],
-        itemsTablet: [768, 2],
-        itemsTabletSmall: [800, 2],
-        itemsMobile: [479, 1]
-    });
-    $("#owl-demo-3").owlCarousel({
-        items: 1,
-        lazyLoad: true,
-        navigation: false,
-        itemsDesktop: [1280, 1],
-        itemsDesktopSmall: [980, 1],
-        itemsTablet: [768, 1],
-        itemsMobile: [479, 1]
-    });
 //    With Arrows
     $("#main-banner").owlCarousel({
         items: 1,
