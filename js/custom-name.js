@@ -1,6 +1,6 @@
 function reCss() {
     var nameHeight = $('.detail-name').height();
-    for (var idx = 1; idx <= 5; idx++) {
+    for (var idx = 1; idx <= 6; idx++) {
         var masterElement = $('#name-master-height-' + idx.toString());
         var slaveElement = $('#name-slave-height-' + idx.toString());
         var height = masterElement.height();
