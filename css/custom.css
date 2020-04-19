@@ -127,6 +127,15 @@
     vertical-align: middle;
 }
 
+.name-zodiac {
+    width: 100%;
+}
+
+#name-slave-height-0 > p > span {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 .zodiac-box {
     /*height: 250px;*/
     text-align: center;
@@ -277,3 +286,10 @@
 .calendar-yj > div > span {
     font-size: 14px;
 }
+
+.share-button {
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+

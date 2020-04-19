@@ -16,11 +16,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.13.0/css/fontawesome.min.css">
 
     <!--Fonts-->
-    <link href='css/local.google.fonts.css' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='css/local.google.fonts.css'>
+
+    <link rel='stylesheet' href='css/share.min.css'>
 
     <!--owl-carousel css-->
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
@@ -107,7 +110,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 padding-top-bottom">
+            <div class="padding-top-bottom">
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3 col-lg-offset-3 col-xl-offset-3">
@@ -117,7 +120,7 @@
                                         <div class="col-md-4 col-xs-4 name-form-text">Your Given Name:</div>
                                         <div class="col-md-8 col-xs-8">
                                             <input type="text" class="form-control name-form-input"
-                                                   placeholder="Your Given Name *" id="given_name"
+                                                   placeholder="Bruce" id="given_name"
                                                    required
                                                    data-validation-required-message="Please enter your given name.">
                                         </div>
@@ -129,7 +132,7 @@
                                         <div class="col-md-4 col-xs-4 name-form-text">Your Family Name:</div>
                                         <div class="col-md-8 col-xs-8">
                                             <input type="text" class="form-control name-form-input"
-                                                   placeholder="Your Family Name *" id="family_name"
+                                                   placeholder="Lee" id="family_name"
                                                    required
                                                    data-validation-required-message="Please enter your family name.">
                                         </div>
@@ -142,11 +145,11 @@
                                         <div class="col-md-8 col-xs-8">
                                             <div class="radio name-gender-radio">
                                                 <label><input type="radio" name="optionsRadios" id="optionsRadios1"
-                                                              value="1" checked>男</label>
+                                                              value="1" checked>Male</label>
                                             </div>
                                             <div class="radio name-gender-radio" style="margin-left: 20px">
                                                 <label><input type="radio" name="optionsRadios" id="optionsRadios2"
-                                                              value="2">女</label>
+                                                              value="2">Female</label>
                                             </div>
                                         </div>
                                     </div>
@@ -157,7 +160,8 @@
                                         <div class="col-md-4 col-xs-4 name-form-text">Your BirthDay:</div>
                                         <div class="col-md-8 col-xs-8">
                                             <div class="input-group date" id="name-birthday">
-                                                <input type="text" class="form-control name-form-input"/>
+                                                <input type="text" placeholder="1940-11-27"
+                                                       class="form-control name-form-input"/>
                                                 <span class="input-group-addon">
                                                     <span class="glyphicon glyphicon-calendar"></span>
                                                 </span>
@@ -176,32 +180,43 @@
                 </form>
             </div>
         </div>
+        <div class="row share-button">
+            <div class="social-share" data-sites="facebook, twitter, google, wechat, weibo, qq, qzone"></div>
+        </div>
     </div>
 
     <div class="container animatedParent">
         <div class="row text-center">
-            <!--<div class="col-md-3 animated bounceInLeft slower">
-                <div class="circle text-center name-circle-text">
-                    <img src="images/zodiac/monkey.png">
-                </div>
-                <h4 class="service-heading">Chinese Zodiac Animals: Monkey</h4>
-                <p class="text-muted">Monkey means you are sharp, smart and curiosity.</p>
-            </div>-->
             <div class="col-md-4 animated bounceInLeft slower">
-                <div class="circle text-center name-circle-text">廖</div>
-                <h4 class="service-heading">Liao</h4>
-                <p class="text-muted">Lina amd Liao are both start with L.</p>
+                <div class="circle text-center name-circle-text">李</div>
+                <h4 class="service-heading">Li</h4>
+                <p class="text-muted">Lee amd Li are both start with L.</p>
             </div>
             <div class="col-md-4 animated bounceInDown slower">
-                <div class="circle text-center name-circle-text">爱</div>
-                <h4 class="service-heading">Ai</h4>
-                <p class="text-muted">Ai means love, like, cherish, treasure</p>
+                <div class="circle text-center name-circle-text">小</div>
+                <h4 class="service-heading">Xiao</h4>
+                <p class="text-muted">Xiao, not of imposing stature but strong and capable</p>
             </div>
             <div class="col-md-4 animated bounceInRight slower">
-                <div class="circle text-center name-circle-text">培</div>
-                <h4 class="service-heading">Pei</h4>
-                <p class="text-muted">Pei means train, cultivate, foster.</p>
+                <div class="circle text-center name-circle-text">龙</div>
+                <h4 class="service-heading">Long</h4>
+                <p class="text-muted">Long is dragon, the most powerful Chinese mythical animal.</p>
             </div>
+        </div>
+        <div class="blog-box">
+        <div class="row">
+            <div class="col-md-4" id="name-master-height-0">
+                <img class="name-zodiac" src="http://cdn.wustlz.com/image/name/dragon.png" alt="">
+            </div>
+            <div class="col-md-8" id="name-slave-height-0">
+                <p><span>Your zodiac animal is dragon</span><br />The dragon is thought to be the most powerful sign
+                    in the Chinese zodiac, despite being an imaginary animal. People born in this sign tend to be
+                    hotheaded and have sharp tongues.<br />
+                    They’re also ambitious risk-takers who are not afraid of challenges, thus making them feel they
+                    could control everything. Most dragons are filled with enthusiasm and confidence, with a lot of
+                    courage, tenacity and intelligence.</p>
+            </div>
+        </div>
         </div>
     </div>
 </section>
@@ -218,7 +233,8 @@
                 spread in China since the Northern Song Dynasty in the 10th century. "HUNDRED SURNAMES" uses
                 four-character style to arrange the surnames, and the rhymes in sentences have played a huge role in the
                 inheritance of Chinese surname culture and the understanding of Chinese characters. </p>
-            <p class="data-i18n-text-2">"HUNDRED SURNAMES" is named "Hundred", because the ancients often used "Hundred" as an empty word to
+            <p class="data-i18n-text-2">"HUNDRED SURNAMES" is named "Hundred", because the ancients often used "Hundred"
+                as an empty word to
                 indicate "many". In addition, this book has 411 surnames, and later increased to 504, including 444
                 single surnames and 60 complex surnames.
             </p>
@@ -301,7 +317,8 @@
                         <div class="col-xs-8 col-sm-10 col-md-10 name-content" id="name-master-height-2">
                             <p class="data-i18n-text-li">One Li Tao's descendant were punished for offending King Zhou
                                 (A stunner). His wife and children picked fruits under a plum tree to fill their hunger
-                                and survived. Later, his descendants changed their surname to "Lee" in honor of this Li Tao's descendant.
+                                and survived. Later, his descendants changed their surname to "Lee" in honor of this Li
+                                Tao's descendant.
                             </p>
                         </div>
                     </div>
@@ -371,9 +388,10 @@
                             </div>
                         </div>
                         <div class="col-xs-8 col-sm-10 col-md-10 name-content" id="name-master-height-4">
-                            <p class="data-i18n-text-wang">The WANG is composed of three horizontals and one vertical. The three horizontals
-                                represent the sky, the earth, and the people, and the one vertical runs through the sky,
-                                the earth, and the people. In 2018, Wang has become the country's largest surname.</p>
+                            <p class="data-i18n-text-wang">The WANG is composed of three horizontals and one vertical.
+                                The three horizontals represent the sky, the earth, and the people, and the one vertical
+                                runs through the sky, the earth, and the people. In 2018, Wang has become the country's
+                                largest surname.</p>
                         </div>
                     </div>
                 </div>
@@ -494,10 +512,12 @@
 <script type="application/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script type="application/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="application/javascript" src="https://cdn.bootcss.com/moment.js/2.22.0/moment-with-locales.js"></script>
-<script type="application/javascript" src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+<script type="application/javascript"
+        src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 
 <!-- Contact Form JavaScript -->
-<script type="application/javascript" src="https://cdn.bootcss.com/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js"></script>
+<script type="application/javascript"
+        src="https://cdn.bootcss.com/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js"></script>
 <script type="application/javascript" src="https://style.wustlz.com/js/owl.carousel.min.js"></script>
 
 <!-- Theme JavaScript -->
@@ -506,6 +526,10 @@
 <script type="application/javascript" src="https://style.wustlz.com/js/wow.min.js"></script>
 
 <script type="application/javascript" src="https://style.wustlz.com/js/jquery.i18n.properties.js"></script>
+
+<script type="application/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/jquery.share.min.js"></script>
+<!--<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>-->
 
 <script type="application/javascript" src="js/main.js"></script>
 <script type="application/javascript" src="js/script.js"></script>
