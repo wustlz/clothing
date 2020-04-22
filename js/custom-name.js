@@ -3,7 +3,13 @@ function reCss() {
     for (var idx = 0; idx <= 6; idx++) {
         var masterElement = $('#name-master-height-' + idx.toString());
         var slaveElement = $('#name-slave-height-' + idx.toString());
+        var slaveHeight = slaveElement.height();
         var height = masterElement.height();
+        if (height < slaveHeight) {
+            height = slaveHeight;
+            masterElement = $('#name-slave-height-' + idx.toString());
+            slaveElement = $('#name-master-height-' + idx.toString());
+        }
         if (height < nameHeight) {
             height = nameHeight;
             masterElement.css("height", height);
@@ -54,7 +60,8 @@ $(function () {
                 data: {
                     givenName: givenName,
                     familyName: familyName,
-                    gender: gender
+                    gender: gender,
+                    birth: birth
                 },
                 dataType: 'json',
                 cache: false,
@@ -71,6 +78,10 @@ $(function () {
                         $('#name-last-zh').html(data.body.lastName);
                         $('#name-last-py').html(data.body.lastNamePy);
                         $('#name-last-mean').html(data.body.lastNamePy + " means " + data.body.lastMeans + ".");
+                        $('#name-zodiac-animal').attr('src', 'http://cdn.wustlz.com/images/zodiac/' + data.body.zodiacName + '.png')
+                        $('#name-zodiac-mean').html('<span>Your zodiac animal is ' + data.body.zodiacName + '</span><br />'
+                            + data.body.zodiacMean);
+                        reCss();
                     } else {
                         error_html(data.returnMsg);
                     }
