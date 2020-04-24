@@ -66,7 +66,7 @@ $(function () {
                 dataType: 'json',
                 cache: false,
                 success: function (data) {
-                    console.log(data);
+                    // console.log(data);
                     if (data.returnCode === 0) {
                         $('#name-family-zh').html(data.body.surname);
                         $('#name-family-py').html(data.body.surnamePy);

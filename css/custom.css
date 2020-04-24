@@ -207,7 +207,7 @@
     line-height: 1;
 }
 
-.calendar-table > tbody > tr > td > a:hover {
+.calendar-table > tbody > tr > td > a:hover, .day-selected {
     padding: 2px;
     border: 3px solid #fb0;
 }
@@ -237,19 +237,19 @@
 }
 
 .calendar-p-1 {
-    margin-top: 12px;
+    margin-top: 8px;
     color: #ffffff;
 }
 
 .calendar-p-2 {
     position: relative;
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     margin: 0 auto;
     padding: 0;
     color: #ffffff;
-    line-height: 76px;
-    font-size: 52px;
+    line-height: 65px;
+    font-size: 45px;
     background: #fb0;
     border-radius: 3px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1), -1px 2px 5px rgba(0, 0, 0, 0.1);
@@ -269,7 +269,7 @@
     margin-left: auto;
     margin-right: auto;
     border-top: 2px solid #94c9ff;
-    padding-top: 10px;
+    padding-top: 8px;
     line-height: 18px;
     color: #ffffff;
     white-space: nowrap;
@@ -279,12 +279,12 @@
 
 .calendar-yj > div > p {
     color: #ffffff;
-    font-size: 24px;
-    margin: 0px;
+    font-size: 20px;
+    margin: 0;
 }
 
 .calendar-yj > div > span {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .share-button {
