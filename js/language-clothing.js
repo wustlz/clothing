@@ -2,11 +2,6 @@
 var lan = "en";
 
 $.ready(function () {
-    // alert("页面加载时调用的方法");
-    lan = $.i18n.normaliseLanguageCode({}); //获取浏览器的语言
-    if (lan !== 'zh') {
-        lan = 'en';
-    }
     loadProperties(lan);
 });
 

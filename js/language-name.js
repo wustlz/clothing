@@ -3,11 +3,6 @@ var lan = "en";
 var datetimepicker_lan = 'en';
 
 $(function () {
-    lan = $.i18n.normaliseLanguageCode({}); //获取浏览器的语言
-    if (lan !== 'zh') {
-        lan = 'en';
-        datetimepicker_lan='en';
-    }
     loadProperties(lan);
 });
 
