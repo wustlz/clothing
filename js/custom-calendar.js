@@ -6800,6 +6800,227 @@ $(function () {
     yj_set["2030"] = yj_2030;
 });
 
+// 获取中英文对照表
+const en_zh = {};
+$(function () {
+    en_zh['一月'] = 'January';
+    en_zh['二月'] = 'february';
+    en_zh['三月'] = 'March';
+    en_zh['四月'] = 'April';
+    en_zh['五月'] = 'May';
+    en_zh['六月'] = 'June';
+    en_zh['七月'] = 'July';
+    en_zh['八月'] = 'August';
+    en_zh['九月'] = 'September';
+    en_zh['十月'] = 'October';
+    en_zh['冬月'] = 'November';
+    en_zh['腊月'] = 'December';
+    en_zh['初一'] = '初一/1';
+    en_zh['初二'] = '初二/2';
+    en_zh['初三'] = '初三/3';
+    en_zh['初四'] = '初四/4';
+    en_zh['初五'] = '初五/5';
+    en_zh['初六'] = '初六/6';
+    en_zh['初七'] = '初七/7';
+    en_zh['初八'] = '初八/8';
+    en_zh['初九'] = '初九/9';
+    en_zh['初十'] = '初十/10';
+    en_zh['十一'] = '十一/11';
+    en_zh['十二'] = '十二/12';
+    en_zh['十三'] = '十三/13';
+    en_zh['十四'] = '十四/14';
+    en_zh['十五'] = '十五/15';
+    en_zh['十六'] = '十六/16';
+    en_zh['十七'] = '十七/17';
+    en_zh['十八'] = '十八/18';
+    en_zh['十九'] = '十九/19';
+    en_zh['二十'] = '二十/20';
+    en_zh['廿一'] = '廿一/21';
+    en_zh['廿二'] = '廿二/22';
+    en_zh['廿三'] = '廿三/23';
+    en_zh['廿四'] = '廿四/24';
+    en_zh['廿五'] = '廿五/25';
+    en_zh['廿六'] = '廿六/26';
+    en_zh['廿七'] = '廿七/27';
+    en_zh['廿八'] = '廿八/28';
+    en_zh['廿九'] = '廿九/29';
+    en_zh['三十'] = '三十/30';
+    en_zh['立春'] = 'Start of Spring';
+    en_zh['雨水'] = 'Rain Water';
+    en_zh['惊蛰'] = 'Insects Awaken';
+    en_zh['春分'] = 'Spring Equinox';
+    en_zh['清明'] = 'Pure Brightness';
+    en_zh['谷雨'] = 'Grain Rain';
+    en_zh['立夏'] = 'Start of Summer';
+    en_zh['小满'] = 'Grain Full';
+    en_zh['芒种'] = 'Grain in Ear';
+    en_zh['夏至'] = 'Summer Solstice';
+    en_zh['小暑'] = 'Slight Heat';
+    en_zh['大暑'] = 'Great heat';
+    en_zh['立秋'] = 'Start of Autumn';
+    en_zh['处暑'] = 'The End of Heat';
+    en_zh['白露'] = 'White Dew';
+    en_zh['秋分'] = 'Autumn Equinox';
+    en_zh['寒露'] = 'Cold Dew';
+    en_zh['霜降'] = 'Frost Descent';
+    en_zh['立冬'] = 'Start of Winter';
+    en_zh['小雪'] = 'Light Snow';
+    en_zh['大雪'] = 'Heavy Snow';
+    en_zh['冬至'] = 'Winter Solstice';
+    en_zh['小寒'] = 'Lesser Cold';
+    en_zh['大寒'] = 'Greater Cold';
+    en_zh['星期一'] = 'Monday';
+    en_zh['星期二'] = 'Tuesday';
+    en_zh['星期三'] = 'Wednesday';
+    en_zh['星期四'] = 'Thursday';
+    en_zh['星期五'] = 'Friday';
+    en_zh['星期六'] = 'Saturday';
+    en_zh['星期日'] = 'Sunday';
+    en_zh['鼠'] = 'Rat';
+    en_zh['牛'] = 'Ox';
+    en_zh['虎'] = 'Tiger';
+    en_zh['兔'] = 'Rabbit';
+    en_zh['龙'] = 'Dragon';
+    en_zh['蛇'] = 'Snake';
+    en_zh['马'] = 'Horse';
+    en_zh['羊'] = 'Goat';
+    en_zh['猴'] = 'Monkey';
+    en_zh['鸡'] = 'Rooster';
+    en_zh['狗'] = 'Dog';
+    en_zh['猪'] = 'Pig';
+    en_zh['元旦节'] = "New Year's Day";
+    en_zh['世界湿地日'] = "World Wetlands Day";
+    en_zh['国际气象节'] = "World Meteorological Day";
+    en_zh['情人节'] = "Valentine's Day";
+    en_zh['国际海豹日'] = "International Seal Day";
+    en_zh['全国爱耳日'] = "Ear Care Day";
+    en_zh['学雷锋纪念日'] = "Lei Feng Memorial Day";
+    en_zh['妇女节'] = "International Women's Day";
+    en_zh['植树节'] = "Arbor Day";
+    en_zh['国际警察日'] = "International Police Day";
+    en_zh['消费者权益日'] = "World Consumer Right Day";
+    en_zh['中国国医节 国际航海日'] = "International Navigation Day";
+    en_zh['世界森林日 消除种族歧视国际日 世界儿歌日'] = "World Forest Day";
+    en_zh['世界水日'] = "World Water Day";
+    en_zh['世界气象日'] = "World Meteorological Day";
+    en_zh['世界防治结核病日'] = "World Tuberculosis Day";
+    en_zh['愚人节'] = "April Fools' Day";
+    en_zh['世界卫生日'] = "World Health Day";
+    en_zh['世界地球日'] = "World Earth Day";
+    en_zh['世界图书和版权日'] = "World Book and Copyright Day";
+    en_zh['亚非新闻工作者日'] = "Asian African journalists day";
+    en_zh['劳动节'] = "International Labour Day";
+    en_zh['青年节'] = "Chinese Youth Day";
+    en_zh['世界红十字日'] = "World Red-Cross Day";
+    en_zh['国际护士节'] = "International Nurse Day";
+    en_zh['国际家庭日'] = "International Day of Families";
+    en_zh['国际博物馆日'] = "International Museum Day";
+    en_zh['世界无烟日'] = "World No-Smoking Day";
+    en_zh['国际儿童节 世界牛奶日'] = "International Children's Day";
+    en_zh['世界环境日'] = "International Environment Day";
+    en_zh['防治荒漠化和干旱日'] = "World Day to Combat Desertification";
+    en_zh['国际奥林匹克日'] = "desertification";
+    en_zh['国际禁毒日'] = "International Day Against Drug Abuse";
+    en_zh['建军节'] = "Army Day";
+    en_zh['抗日战争胜利纪念日'] = "Chinese people's war of resistance against Japan";
+    en_zh['教师节'] = "Teacher's Day";
+    en_zh['世界旅游日'] = "World Tourism Day";
+    en_zh['世界动物日'] = "World Animal Day";
+    en_zh['老人节'] = "World Post Day";
+    en_zh['国际教师节'] = "International Teachers' Day";
+    en_zh['辛亥革命纪念日 世界精神卫生日'] = "World Mental Health Day";
+    en_zh['世界标准日'] = "World Standards Day";
+    en_zh['国际盲人节(白手杖节)'] = "International Day of the Blind";
+    en_zh['世界粮食日'] = "World Food Day";
+    en_zh['世界消除贫困日'] = "International Day for the Eradication of Poverty";
+    en_zh['联合国日 世界发展信息日'] = "United Nations Day";
+    en_zh['世界青年节'] = "World Youth Day";
+    en_zh['联合国糖尿病日'] = "World Diabetes Day";
+    en_zh['世界艾滋病日'] = "World Aids Day";
+    en_zh['世界残疾人日'] = "World Disabled Day";
+    en_zh['世界足球日'] = "World Football Day";
+    en_zh['南京大屠杀纪念日'] = "The National public memorial day of Nanjing Massacre";
+    en_zh['平安夜'] = "Christmas Eve";
+    en_zh['圣诞节'] = "Christmas Day";
+    en_zh['国际母亲节'] = "Mothers' Day";
+    en_zh['国际牛奶日'] = "International Milk Day";
+    en_zh['父亲节'] = "Fathers' Day";
+    en_zh['世界建筑日'] = "World Architecture Day";
+    en_zh['国际和平日'] = "International Peace Day";
+    en_zh['世界视觉日'] = "World Sight Day";
+    en_zh['春节'] = "Sparing Festival";
+    en_zh['元宵节'] = "Lantern Festival";
+    en_zh['端午节'] = "Dragon-boat Festival";
+    en_zh['中秋节'] = "Mid-autumn Festival";
+    en_zh['除夕'] = "Chinese New Year's Eve";
+    en_zh['立约'] = 'conclude contracts';
+    en_zh['动土'] = 'start building';
+    en_zh['成服'] = 'wear mour clothes';
+    en_zh['订盟'] = 'create covenant';
+    en_zh['求职'] = 'apply for jobs';
+    en_zh['见工'] = 'interview';
+    en_zh['入宅'] = 'move in';
+    en_zh['纳畜'] = 'buy livestock';
+    en_zh['立约'] = 'make promise';
+    en_zh['交易'] = 'make transactions';
+    en_zh['结婚'] = 'obtain marriage certificate';
+    en_zh['求医'] = 'go to hospital';
+    en_zh['嫁娶'] = 'wedding';
+    en_zh['入仓'] = 'store in warehouse';
+    en_zh['安葬'] = 'funeral';
+    en_zh['上书'] = 'submit reports';
+    en_zh['拆卸'] = 'teardown';
+    en_zh['馀事勿取'] = 'nothing else';
+    en_zh['签约'] = 'sign contracts';
+    en_zh['开市'] = 'open market';
+    en_zh['求子'] = 'pray for pregnancy';
+    en_zh['求官'] = 'ask for promotion';
+    en_zh['收财'] = 'collect accounts';
+    en_zh['会友'] = 'meet friends';
+    en_zh['出行'] = 'travel';
+    en_zh['涂泥'] = 'redecorate house';
+    en_zh['结亲'] = 'get engaged';
+    en_zh['祭祀'] = 'sacrificial ceremony';
+    en_zh['入学'] = 'enroll in school';
+    en_zh['求财'] = 'pray for wealth';
+    en_zh['上任'] = 'assume office';
+    en_zh['疗病'] = 'receive treatment';
+    en_zh['修填'] = 'repair';
+    en_zh['立券'] = 'sign contracts';
+    en_zh['赴考'] = 'take exams';
+    en_zh['祈福'] = 'pray';
+    en_zh['日值月破 大事不宜'] = 'nothing big';
+    en_zh['经营'] = 'run business';
+    en_zh['除服'] = 'take off mourn clothes';
+    en_zh['日值岁破 大事不宜'] = 'nothing big';
+    en_zh['日值杨公十三忌 大事不宜'] = 'nothing big';
+    en_zh['登高'] = 'climb';
+    en_zh['词讼'] = 'go to court';
+    en_zh['宴会'] = 'party';
+    en_zh['移徙'] = 'migrate';
+    en_zh['种植'] = 'plant';
+    en_zh['服药'] = 'take medicine';
+    en_zh['行船'] = 'sail boats';
+    en_zh['安门'] = 'install doors';
+    en_zh['安床'] = 'install beds';
+    en_zh['开仓'] = 'open warehouse';
+    en_zh['置业'] = 'purchase properties';
+    en_zh['搬家'] = 'move house';
+    en_zh['针灸'] = 'acupuncture';
+    en_zh['开张'] = 'open business';
+    en_zh['卖田'] = 'land sale';
+    en_zh['栽种'] = 'grow plants';
+    en_zh['远行'] = 'long journey';
+    en_zh['纳采'] = 'propose';
+    en_zh['掘井'] = 'dig well';
+    en_zh['博彩'] = 'gamble';
+    en_zh['破土'] = 'break ground';
+    en_zh['探病'] = 'visit patients';
+    en_zh['造船'] = 'build ship';
+    en_zh['迁移'] = 'residence relocation';
+    en_zh['修造'] = 'build and construct';
+});
+
 // 获取宜忌数据
 function getYiji(year) {
     let info = yj_set[year.toString()];
@@ -6898,7 +7119,14 @@ function initMonth(curMonth) {
 function initDay(curYear, curMonth, curDay) {
     // console.log('init day', curYear, curMonth, curDay);
     let dataset = getData({'year': curYear, 'month': curMonth, 'day': curDay});
-    console.log(dataset);
+    // console.log(dataset);
+    let lan = 'en';
+    let lan_text = $('.data-i18n-lan').text();
+    if (lan_text === '切换中文') {
+        lan = 'en';
+    } else {
+        lan = 'zh';
+    }
     let htmlStr = '';
     $.each(dataset['data'], function (index, value) {
         if (index % 7 === 0) {
@@ -6918,13 +7146,18 @@ function initDay(curYear, curMonth, curDay) {
         htmlStr += value['cDay'];
         htmlStr += '</p>';
         htmlStr += '<span>';
-        if (value['Term'] !== null && value['Term'].trim() !== '') {
-            htmlStr += value['Term'];
-        } else if (value['festival'] !== null && value['festival'].trim() !== '' && value['festival'].length < 5) {
-            htmlStr += value['festival'];
+        if (lan === 'zh') {
+            if (value['Term'] !== null && value['Term'].trim() !== '') {
+                htmlStr += value['Term'];
+            } else if (value['festival'] !== null && value['festival'].trim() !== '' && value['festival'].length < 5) {
+                htmlStr += value['festival'];
+            } else {
+                htmlStr += value['IDayCn'];
+            }
         } else {
-            htmlStr += value['IDayCn'];
+            htmlStr += en_zh[value['IDayCn']];
         }
+
         htmlStr += '</span>';
         htmlStr += '<span hidden>' + value['cMonth'] + '</span>';
         htmlStr += '</a></td>';
@@ -6933,10 +7166,10 @@ function initDay(curYear, curMonth, curDay) {
         }
     });
     $('#calendar-month').html(htmlStr);
-    initDateInfo(dataset['date']);
+    initDateInfo(dataset['date'], lan);
 }
 
-function initDateInfo(curDateInfo) {
+function initDateInfo(curDateInfo, lan) {
     // console.log(curDateInfo);
     let curDateStr = curDateInfo['cYear'].toString() + '-';
     if (curDateInfo['cMonth'] < 10) {
@@ -6949,9 +7182,16 @@ function initDateInfo(curDateInfo) {
     curDateStr += curDateInfo['cDay'].toString();
     $('.calendar-p-1').html(curDateStr);
     $('.calendar-p-2').html(curDateInfo['cDay']);
-    $('.calendar-p-3>span').eq(0).html(curDateInfo['IMonthCn'] + curDateInfo['IDayCn']);
-    $('.calendar-p-3>span').eq(1).html(curDateInfo['gzYear'] + '年 【' + curDateInfo['Animal'] + '年】');
-    $('.calendar-p-3>span').eq(2).html(curDateInfo['gzMonth'] + '月 ' + curDateInfo['gzDay'] + '日');
+    if (lan === 'zh') {
+        $('.calendar-p-3>span').eq(0).html(curDateInfo['IMonthCn'] + curDateInfo['IDayCn']);
+        $('.calendar-p-3>span').eq(1).html(curDateInfo['gzYear'] + '年 【' + curDateInfo['Animal'] + '年】');
+        $('.calendar-p-3>span').eq(2).html(curDateInfo['gzMonth'] + '月 ' + curDateInfo['gzDay'] + '日');
+    } else {
+        let day_tmp = en_zh[curDateInfo['IDayCn']].split('/');
+        $('.calendar-p-3>span').eq(0).html('Lunar Date is ' + en_zh[curDateInfo['IMonthCn']] + ' ' + day_tmp[1]);
+        $('.calendar-p-3>span').eq(1).html('Year of the ' + en_zh[curDateInfo['Animal']]);
+        $('.calendar-p-3>span').eq(2).html(en_zh[curDateInfo['ncWeek']]);
+    }
 
     let yjInfos = getYiji(curDateInfo['cYear']);
 
@@ -6959,34 +7199,52 @@ function initDateInfo(curDateInfo) {
         let reg = new RegExp("-", "g");
         let key = curDateStr.replace(reg, '');
         let value = yjInfos[key];
-        $('#calendar-yi').html(dealInfo(value['yi']));
-        $('#calendar-ji').html(dealInfo(value['ji']));
+        $('#calendar-yi').html(dealInfo(value['yi'], lan));
+        $('#calendar-ji').html(dealInfo(value['ji'], lan));
     } else {
         let htmlStr = '<div class="col-md-12 col-sm-12 col-xs-12">';
-        if (curDateInfo['Term'] != null) {
-            htmlStr += '<p>' + curDateInfo['Term'] + '</p>';
-        }
-        if (curDateInfo['festival'] != null) {
-            htmlStr += '<p>' + curDateInfo['festival'] + '</p>';
+        if (lan === 'zh') {
+            if (curDateInfo['Term'] != null) {
+                htmlStr += '<p>' + curDateInfo['Term'] + '</p>';
+            }
+            if (curDateInfo['festival'] != null) {
+                htmlStr += '<p>' + curDateInfo['festival'] + '</p>';
+            }
+        } else {
+            let term = en_zh[curDateInfo['Term']];
+            if (typeof(term) !== "undefined") {
+                htmlStr += '<p>' + term + '</p>';
+            }
+            let f = en_zh[curDateInfo['festival']];
+            if (typeof(f) !== "undefined") {
+                htmlStr += '<p>' + f + '</p>';
+            }
         }
         htmlStr += '</div>';
         $('.calendar-yj').html(htmlStr);
     }
 }
 
-function dealInfo(info) {
+function dealInfo(info, lan) {
     let infos = info.split('.');
     let result = [];
     $.each(infos, function (index, value) {
-        if (value.length > 7) {
-            let vs = value.split(' ');
-            $.each(vs, function (i, v) {
-                if (v.trim().length > 0) {
-                    result.push(v.trim());
-                }
-            });
+        if (lan === 'zh') {
+            if (value.length > 7) {
+                let vs = value.split(' ');
+                $.each(vs, function (i, v) {
+                    if (v.trim().length > 0) {
+                        result.push(v.trim());
+                    }
+                });
+            } else {
+                result.push(value.trim());
+            }
         } else {
-            result.push(value.trim());
+            let v = en_zh[value];
+            if (typeof(v) !== 'undefined') {
+                result.push(v);
+            }
         }
     });
     let htmlStr = '';

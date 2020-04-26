@@ -11,7 +11,7 @@ $.ready(function () {
 });
 
 function changeLanguage() {
-    lan_text = $('.data-i18n-lan').text();
+    let lan_text = $('.data-i18n-lan').text();
     if (lan_text === '切换中文') {
         lan = 'zh';
     } else {
@@ -34,4 +34,8 @@ function loadProperties(type) {
             });
         }
     });
+    let selectYear = $('#selected-year').val();
+    let selectMonth = parseInt($('#selected-month').val()) + 1;
+    let selectDay = parseInt($('.calendar-p-2').html());
+    initDay(selectYear, selectMonth, selectDay);
 }
