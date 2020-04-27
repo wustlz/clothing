@@ -208,7 +208,7 @@
 }
 
 .calendar-table > tbody > tr > td > a:hover, .day-selected {
-    padding: 2px;
+    padding: 3px;
     border: 3px solid #fb0;
 }
 
@@ -217,7 +217,7 @@
 }
 
 .calendar-table > thead > tr > th {
-    padding: 10px;
+    padding: 12px;
     font-weight: normal;
     font-size: 13px;
     text-align: center;
