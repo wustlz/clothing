@@ -56,7 +56,7 @@ $(function () {
 
             $.ajax({
                 url: "http://127.0.0.1:8092/v1/name/chinese",
-                type: "GET",
+                type: "POST",
                 data: {
                     givenName: givenName,
                     familyName: familyName,

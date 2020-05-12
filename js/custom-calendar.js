@@ -7028,7 +7028,7 @@ function getYiji(year) {
         info = {};
         $.ajax({
             url: "http://127.0.0.1:8092/v1/calendar/yi-ji/year",
-            type: "GET",
+            type: "POST",
             data: {
                 year: year
             },
