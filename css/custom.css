@@ -95,6 +95,10 @@
     .name-form-text {
         font-size: 18px;
     }
+    .name-gender-radio > label {
+        margin-left: 10px;
+        font-size: 16px;
+    }
 }
 
 .name-form-input {
@@ -107,8 +111,6 @@
 
 .name-gender-radio > label {
     padding-top: 10px;
-    margin-left: 10px;
-    font-size: 16px;
 }
 
 #name-birthday > input {
