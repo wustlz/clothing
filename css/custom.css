@@ -95,6 +95,7 @@
     .name-form-text {
         font-size: 18px;
     }
+
     .name-gender-radio > label {
         margin-left: 10px;
         font-size: 16px;
@@ -293,5 +294,115 @@
     text-align: center;
     margin-top: -50px;
     margin-bottom: 10px;
+}
+
+.novel-heading {
+    margin-bottom: 55px;
+}
+
+@media only screen and (max-width: 700px) {
+    .novel-heading {
+        margin-bottom: 80px;
+    }
+}
+
+.novel-latest-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.novel-box {
+    padding: 15px 30px;
+}
+
+.novel-box > .row > img {
+    width: 100%;
+}
+
+.btn-novel {
+    color: #000000;
+    background-color: #f0e5de !important;
+    border-color: #FFDAB9 !important;
+}
+
+.btn-novel:hover, .btn-novel:active {
+    color: #000000;
+    background-color: #FFE4C4 !important;
+    border-color: #FFDAB9 !important;
+}
+
+.novel-banner {
+    padding-bottom: 40px;
+    padding-top: 85px;
+    position: relative;
+    z-index: 9;
+}
+
+@media only screen and (min-width: 768px) {
+    .novel-banner {
+        padding-top: 90px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .novel-banner {
+        padding-bottom: 40px;
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .novel-banner {
+        padding-bottom: 30px;
+        padding-top: 60px;
+    }
+}
+
+.novel-content {
+    padding-top: 10px;
+}
+
+.novel-detail-img {
+    width: 100%;
+}
+
+.novel-detail-head {
+    margin-top: 30px;
+}
+
+.novel-detail-date {
+    color: #999999;
+    padding-right: 10px;
+}
+
+.novel-detail-hot {
+    color: #ff1f30;
+}
+
+.novel-author {
+    padding-left: 10px;
+}
+
+.novel-tag {
+    padding-top: 15px;
+}
+
+.novel-tag > p > span {
+    color: #999999;
+}
+
+.divider {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.novel-detail-pre-next {
+    padding-top: 15px;
+}
+
+.novel-detail-pre-text {
+    color: #999999;
 }
 
