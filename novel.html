@@ -16,7 +16,6 @@
     <meta name="keywords"
           content="Chinese culture,what is Chinese culture,chinese dress,chinese clothing,traditional Chinese clothing,cheongsam,qipao,Chinese name">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--    <link rel="apple-touch-icon" href="apple-touch-icon.png">-->
 
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.13.0/css/fontawesome.min.css">
@@ -69,7 +68,7 @@
                     <li><a href="clothing.html" class="data-i18n-menu-clothing">Clothing</a></li>
                     <li><a href="name.html" class="data-i18n-menu-name">Names</a></li>
                     <li><a href="calendar.html" class="data-i18n-menu-calendar">Calendar</a></li>
-                    <li><a href="novel.html">> <span class="data-i18n-menu-calendar">Novel</a></li>
+                    <li><a href="novel.html">> <span class="data-i18n-menu-calendar">Novel</span></a></li>
                     <li><a href="currency.html" class="data-i18n-menu-calendar">Currency</a></li>
                     <li><a href="tourist.html" class="data-i18n-menu-calendar">Tourist</a></li>
                     <li><a href="javascript:void(0)" onclick="changeLanguage()" class="data-i18n-lan">切换中文</a></li>
@@ -103,82 +102,25 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1>Chinese Novel</h1>
-                <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum
-                    congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-                    magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam.
-                    Lorem ipsum dolor sit nullam.</p>
-                <a href="" class="btn btn-info btn-novel">Read More</a>
+                <h1 class="main-title"></h1>
+                <p class="main-brief"></p>
+                <a href="" class="btn btn-info btn-novel main-href-id">Read More</a>
             </div>
             <div class="col-md-6">
-                <img class="novel-latest-img" src="images/about/novel.jpg" alt="">
+                <img class="novel-latest-img" src="" alt="Chinese Novel">
             </div>
         </div>
     </div>
 </section>
 
-
-<section class="">
+<section class="novel">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
                 <h2 class="section-heading">Chinese Novels</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="novel-box">
-                    <div class="row">
-                        <img src="images/about/novel1.jpg" alt="">
-                    </div>
-                    <div class="row">
-                        <h2>Chinese Novel Title</h2>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <a class="btn btn-info btn-novel" href="novel_detail.html?id=1">More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="novel-box">
-                    <div class="row">
-                        <img src="images/about/novel1.jpg">
-                    </div>
-                    <div class="row">
-                        <h2>Chinese Novel Title</h2>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <a class="btn btn-info btn-novel" href="novel_detail.html?id=2">More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="novel-box">
-                    <div class="row">
-                        <img src="images/about/novel1.jpg">
-                    </div>
-                    <div class="row">
-                        <h2>Chinese Novel Title</h2>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <a class="btn btn-info btn-novel" href="novel_detail.html?id=3">More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="novel-box">
-                    <div class="row">
-                        <img src="images/about/novel1.jpg">
-                    </div>
-                    <div class="row">
-                        <h2>Chinese Novel Title</h2>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                            ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <a class="btn btn-info btn-novel" href="novel_detail.html?id=4">More</a>
-                    </div>
-                </div>
-            </div>
-
+        <div class="row novel-list">
         </div>
     </div>
 </section>
@@ -230,6 +172,7 @@
 
 <script type="application/javascript" src="js/owl/jquery.i18n.properties.min.js"></script>
 <script type="application/javascript" src="js/language-novel.js"></script>
+<script type="application/javascript" src="js/custom-novel.js"></script>
 
 <script src="js/main.js"></script>
 <script src="js/script.js"></script>
