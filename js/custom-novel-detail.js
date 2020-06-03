@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     // post请求到后台
     $.ajax({
-        url: "https://name.iamchineseculture.com:8092/v1/blog/detail",
+        url: "https://name.iamchineseculture.com/v1/blog/detail",
         type: "POST",
         data: {
             type: novel_type,

@@ -55,7 +55,7 @@ $(function () {
             var gender = $(":radio[name=gender]:checked").val();
 
             $.ajax({
-                url: "https://name.iamchineseculture.com:8092/v1/name/chinese",
+                url: "https://name.iamchineseculture.com/v1/name/chinese",
                 type: "POST",
                 data: {
                     givenName: givenName,

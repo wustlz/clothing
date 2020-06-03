@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // 请求novel数据
     $.ajax({
-        url: "https://name.iamchineseculture.com:8092/v1/blog/list",
+        url: "https://name.iamchineseculture.com/v1/blog/list",
         type: "POST",
         data: {
             type: 'novel'

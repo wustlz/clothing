@@ -7027,7 +7027,7 @@ function getYiji(year) {
     if (getDicLength(info) === 0) {
         info = {};
         $.ajax({
-            url: "https://name.iamchineseculture.com:8092/v1/calendar/yi-ji/year",
+            url: "https://name.iamchineseculture.com/v1/calendar/yi-ji/year",
             type: "POST",
             data: {
                 year: year
