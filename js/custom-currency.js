@@ -23,7 +23,7 @@ $(document).ready(function () {
                     tmp += '<img src="' + value.picUrl + '" alt="Chinese Novel"></div>';
                     tmp += '<div class="row"><h2>' + value.title + '</h2>';
                     tmp += '<p>' + value.brief + '</p>';
-                    tmp += '<a class="btn btn-info btn-novel" href="blog_detail.html?id=' + value.id + '">More</a>';
+                    tmp += '<a class="btn btn-info btn-novel" href="blog_detail.html?type=currency&id=' + value.id + '">More</a>';
                     tmp += '</div></div></div>';
                     htmlStr += tmp;
                 });

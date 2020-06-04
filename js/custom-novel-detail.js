@@ -34,9 +34,9 @@ $(document).ready(function () {
                 $('.novel-content').html(novel.content);
                 $('.novel-tag>span').html(novel.tags);
                 $('.novel-pre').html(novel.preTitle);
-                $('.novel-pre').attr('href', 'blog_detail.html?id=' + novel.preId);
+                $('.novel-pre').attr('href', 'blog_detail.html?type=' + novel_type + '&id=' + novel.preId);
                 $('.novel-next').html(novel.nextTitle);
-                $('.novel-next').attr('href', 'blog_detail.html?id=' + novel.nextId);
+                $('.novel-next').attr('href', 'blog_detail.html?type=' + novel_type + '&id=' + novel.nextId);
             } else {
                 alert(data.returnMsg);
             }
