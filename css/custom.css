@@ -4,6 +4,23 @@
     /*float: left;*/
 }
 
+.layer1-index-back {
+    background: url(../images/index/index_bg.png) no-repeat center 0px;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 1200px) {
+    .index-img {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .index-img {
+        margin-top: 80px;
+    }
+}
+
 .layer1-back {
     background-image: url("http://cdn.wustlz.com/images/shan.png");
     background-size: cover;
